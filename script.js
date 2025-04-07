@@ -1,10 +1,6 @@
-// Toggle mobile menu
-const hamburger = document.getElementById('hamburger');
+
 const navbar = document.querySelector('nav ul');
 
-hamburger.addEventListener('click', () => {
-  navbar.classList.toggle('show');
-});
 
 // Scroll animation
 const reveals = document.querySelectorAll('.reveal');
