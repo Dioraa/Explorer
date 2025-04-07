@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nature Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo"> Dubai Explorer</div>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#cards">Destinations</a></li>
+        <li><a href="#hotels">Hotels</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="hamburger" id="hamburger">☰</div>
+  </header>
+  <section class="hero">
+    <img src="images/airplane-7359232_1280.jpg" alt="Nature Background" class="hero-img" />
+    <div class="hero-text">
+      <h1>Explore the Beauty of Nature</h1>
+      <p>Discover places you've never seen before.</p>
+    
+    </div>
+  </section>
+  
+  
+
+  
+
+  <section class="cards" id="cards">
+ 
+    <div class="card reveal">
+      <img src="images/tower-8585214_1280.webp" alt="Dubai City" />
+      <h3>Dubai City</h3>
+      <p>Discover the vibrant city life, stunning skyscrapers, and luxury at every turn.</p>
+    </div>
+    
+    <div class="card reveal">
+      <img src="images/beachhe.jpg" alt="Beach" />
+      <h3>Beaches</h3>
+      <p>Relax by the waves and enjoy the sun.</p>
+    </div>
+ 
+    <div class="card reveal">
+      <img src="images/desert-1101123_1280.jpg" alt="Dubai Desert" />
+      <h3>Dubai Desert</h3>
+      <p>Experience the thrill of golden dunes in the heart of Dubai.</p>
+    </div>
+    
+
+  </section>
+
+
+
+  
+  <section class="slider-section" id="hotels">
+    <h2>Dubai Hotels</h2>
+    <div class="slider-container">
+      <div class="slider" id="hotelSlider">
+        <div class="slide">
+          <img src="images/dubai-2014317_1280.jpg" alt="Burj Al Arab" data-hotel="Burj Al Arab" onclick="bookHotel(this)" />
+          <div class="slide-text">
+            <h3>Burj Al Arab</h3>
+            <p>Luxury 7-star hotel - $500/night</p>
+            <p>Just Click the photo if you want to book Hotel</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/altantis.jpg" alt="Atlantis The Palm" data-hotel="Atlantis The Palm" onclick="bookHotel(this)" />
+          <div class="slide-text">
+            <h3>Atlantis The Palm</h3>
+            <p>Ocean-themed resort - $350/night</p>
+            <p>Just Click the photo if you want to book Hotel</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/marriio.jpg" alt="JW Marriott" data-hotel="JW Marriott Marquis" onclick="bookHotel(this)" />
+          <div class="slide-text">
+            <h3>JW Marriott Marquis</h3>
+            <p>Skyscraper view - $220/night</p>
+            <p>Just Click the photo if you want to book Hotel</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/rixos1.jpg" alt="Rixos Premium" data-hotel="Rixos Premium" onclick="bookHotel(this)" />
+          <div class="slide-text">
+            <h3>Rixos Premium</h3>
+            <p>Price Estimate: $320/night</p>
+            <p>Just Click the photo if you want to book Hotel</p>
+          </div>
+        </div>
+
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">❮</button>
+      <button class="next" onclick="moveSlide(1)">❯</button>
+    </div>
+  </section>
+  
+  
+
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Visitors Say</h2>
+    <div class="testimonials-container">
+  
+      <div class="testimonial">
+        <p>"An unforgettable experience in Dubai! Everything was perfectly organized."</p>
+        <h4>- Sarah M.</h4>
+      </div>
+  
+      <div class="testimonial">
+        <p>"I loved the desert safari and the luxury hotels. Highly recommended!"</p>
+        <h4>- John D.</h4>
+      </div>
+  
+      <div class="testimonial">
+        <p>"Dubai City is breathtaking. From the Burj Khalifa to the beaches, it was amazing."</p>
+        <h4>- Emily R.</h4>
+      </div>
+  
+      <div class="testimonial">
+        <p>"The food, the culture, the views — Dubai has it all! Would visit again without a doubt."</p>
+        <h4>- Ahmed K.</h4>
+      </div>
+  
+      <div class="testimonial">
+        <p>"Our stay at Atlantis The Palm was a dream come true. Perfect for families and couples!"</p>
+        <h4>- Laura & Mike</h4>
+      </div>
+  
+      <div class="testimonial">
+        <p>"We booked everything through this site and it was smooth and easy. Great service!"</p>
+        <h4>- Daniel P.</h4>
+      </div>
+  
+    </div>
+  </section>
+  
+    
+  <section class="cta">
+    <h2>Ready to explore Dubai?</h2>
+    <a href="#contact" class="btn">Plan Your Trip</a>
+  </section>
+  
+
+  
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="number" name="number" placeholder="Your Number" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p class="form-message"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nature Explorer. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
